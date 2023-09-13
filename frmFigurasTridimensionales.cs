@@ -16,5 +16,23 @@ namespace FigurasGeometricas
         {
             InitializeComponent();
         }
+
+        private void btnEsfera_Click(object sender, EventArgs e)
+        {
+            FrmEsfera frmEsfera = new FrmEsfera();
+            frmEsfera.ShowDialog();
+        }
+
+        private void btnCubo_Click(object sender, EventArgs e)
+        {
+            FrmCubocs frmCubocs = new FrmCubocs();
+            frmCubocs.ShowDialog();
+        }
+
+        private void btnTetraedro_Click(object sender, EventArgs e)
+        {
+            FrmTetaedro frmTetaedro = new FrmTetaedro();
+            frmTetaedro.ShowDialog();
+        }
     }
 }
