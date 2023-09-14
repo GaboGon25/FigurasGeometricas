@@ -32,14 +32,14 @@
             label1 = new Label();
             pictureBox1 = new PictureBox();
             label2 = new Label();
-            textBox1 = new TextBox();
+            txtLadoCubo = new TextBox();
             label3 = new Label();
-            textBox2 = new TextBox();
+            txtAreaCubo = new TextBox();
             label4 = new Label();
-            textBox3 = new TextBox();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
+            txtVolumenCubo = new TextBox();
+            btnCalcular = new Button();
+            btnNuevo = new Button();
+            btnRegresar = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -72,12 +72,12 @@
             label2.TabIndex = 2;
             label2.Text = "Introduzca el lado";
             // 
-            // textBox1
+            // txtLadoCubo
             // 
-            textBox1.Location = new Point(135, 135);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(189, 23);
-            textBox1.TabIndex = 3;
+            txtLadoCubo.Location = new Point(135, 135);
+            txtLadoCubo.Name = "txtLadoCubo";
+            txtLadoCubo.Size = new Size(189, 23);
+            txtLadoCubo.TabIndex = 3;
             // 
             // label3
             // 
@@ -89,12 +89,12 @@
             label3.TabIndex = 4;
             label3.Text = "AREA";
             // 
-            // textBox2
+            // txtAreaCubo
             // 
-            textBox2.Location = new Point(16, 262);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 5;
+            txtAreaCubo.Location = new Point(16, 262);
+            txtAreaCubo.Name = "txtAreaCubo";
+            txtAreaCubo.Size = new Size(100, 23);
+            txtAreaCubo.TabIndex = 5;
             // 
             // label4
             // 
@@ -106,53 +106,53 @@
             label4.TabIndex = 6;
             label4.Text = "VOLUMEN";
             // 
-            // textBox3
+            // txtVolumenCubo
             // 
-            textBox3.Location = new Point(371, 262);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(115, 23);
-            textBox3.TabIndex = 7;
+            txtVolumenCubo.Location = new Point(371, 262);
+            txtVolumenCubo.Name = "txtVolumenCubo";
+            txtVolumenCubo.Size = new Size(115, 23);
+            txtVolumenCubo.TabIndex = 7;
             // 
-            // button1
+            // btnCalcular
             // 
-            button1.Location = new Point(16, 383);
-            button1.Name = "button1";
-            button1.Size = new Size(115, 37);
-            button1.TabIndex = 8;
-            button1.Text = "CALCULAR";
-            button1.UseVisualStyleBackColor = true;
+            btnCalcular.Location = new Point(16, 383);
+            btnCalcular.Name = "btnCalcular";
+            btnCalcular.Size = new Size(115, 37);
+            btnCalcular.TabIndex = 8;
+            btnCalcular.Text = "CALCULAR";
+            btnCalcular.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnNuevo
             // 
-            button2.Location = new Point(295, 383);
-            button2.Name = "button2";
-            button2.Size = new Size(115, 37);
-            button2.TabIndex = 9;
-            button2.Text = "NUEVO";
-            button2.UseVisualStyleBackColor = true;
+            btnNuevo.Location = new Point(295, 383);
+            btnNuevo.Name = "btnNuevo";
+            btnNuevo.Size = new Size(115, 37);
+            btnNuevo.TabIndex = 9;
+            btnNuevo.Text = "NUEVO";
+            btnNuevo.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnRegresar
             // 
-            button3.Location = new Point(607, 383);
-            button3.Name = "button3";
-            button3.Size = new Size(115, 37);
-            button3.TabIndex = 10;
-            button3.Text = "REGRESAR";
-            button3.UseVisualStyleBackColor = true;
+            btnRegresar.Location = new Point(607, 383);
+            btnRegresar.Name = "btnRegresar";
+            btnRegresar.Size = new Size(115, 37);
+            btnRegresar.TabIndex = 10;
+            btnRegresar.Text = "REGRESAR";
+            btnRegresar.UseVisualStyleBackColor = true;
             // 
             // FrmCubocs
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(textBox3);
+            Controls.Add(btnRegresar);
+            Controls.Add(btnNuevo);
+            Controls.Add(btnCalcular);
+            Controls.Add(txtVolumenCubo);
             Controls.Add(label4);
-            Controls.Add(textBox2);
+            Controls.Add(txtAreaCubo);
             Controls.Add(label3);
-            Controls.Add(textBox1);
+            Controls.Add(txtLadoCubo);
             Controls.Add(label2);
             Controls.Add(pictureBox1);
             Controls.Add(label1);
@@ -168,13 +168,13 @@
         private Label label1;
         private PictureBox pictureBox1;
         private Label label2;
-        private TextBox textBox1;
+        private TextBox txtLadoCubo;
         private Label label3;
-        private TextBox textBox2;
+        private TextBox txtAreaCubo;
         private Label label4;
-        private TextBox textBox3;
-        private Button button1;
-        private Button button2;
-        private Button button3;
+        private TextBox txtVolumenCubo;
+        private Button btnCalcular;
+        private Button btnNuevo;
+        private Button btnRegresar;
     }
 }

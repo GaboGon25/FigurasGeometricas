@@ -31,12 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCuadrado));
             label1 = new Label();
             label2 = new Label();
-            textBox1 = new TextBox();
+            txtLadoCuadrado = new TextBox();
             pictureBox1 = new PictureBox();
             label3 = new Label();
             label4 = new Label();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
+            txtAreaCuadrado = new TextBox();
+            txtPerimetroCuadrado = new TextBox();
             btnCalcular = new Button();
             btnNuevo = new Button();
             btnRegresar = new Button();
@@ -47,34 +47,38 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Black", 16.125F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label1.Location = new Point(117, 76);
+            label1.Location = new Point(63, 36);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(276, 59);
+            label1.Size = new Size(143, 30);
             label1.TabIndex = 0;
             label1.Text = "CUADRADO";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(117, 193);
+            label2.Location = new Point(63, 90);
+            label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(270, 32);
+            label2.Size = new Size(134, 15);
             label2.TabIndex = 1;
             label2.Text = "INTRODUZCA UN LADO";
             // 
-            // textBox1
+            // txtLadoCuadrado
             // 
-            textBox1.Location = new Point(117, 273);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(476, 39);
-            textBox1.TabIndex = 2;
+            txtLadoCuadrado.Location = new Point(63, 128);
+            txtLadoCuadrado.Margin = new Padding(2, 1, 2, 1);
+            txtLadoCuadrado.Name = "txtLadoCuadrado";
+            txtLadoCuadrado.Size = new Size(258, 23);
+            txtLadoCuadrado.TabIndex = 2;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(704, 76);
+            pictureBox1.Location = new Point(379, 36);
+            pictureBox1.Margin = new Padding(2, 1, 2, 1);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(290, 338);
+            pictureBox1.Size = new Size(156, 158);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
@@ -82,78 +86,86 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(118, 387);
+            label3.Location = new Point(64, 181);
+            label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Size = new Size(70, 32);
+            label3.Size = new Size(36, 15);
             label3.TabIndex = 4;
             label3.Text = "AREA";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(427, 387);
+            label4.Location = new Point(230, 181);
+            label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
-            label4.Size = new Size(138, 32);
+            label4.Size = new Size(69, 15);
             label4.TabIndex = 5;
             label4.Text = "PERIMETRO";
             // 
-            // textBox2
+            // txtAreaCuadrado
             // 
-            textBox2.Location = new Point(117, 469);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(200, 39);
-            textBox2.TabIndex = 6;
+            txtAreaCuadrado.Location = new Point(63, 220);
+            txtAreaCuadrado.Margin = new Padding(2, 1, 2, 1);
+            txtAreaCuadrado.Name = "txtAreaCuadrado";
+            txtAreaCuadrado.Size = new Size(110, 23);
+            txtAreaCuadrado.TabIndex = 6;
             // 
-            // textBox3
+            // txtPerimetroCuadrado
             // 
-            textBox3.Location = new Point(427, 469);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(200, 39);
-            textBox3.TabIndex = 7;
+            txtPerimetroCuadrado.Location = new Point(230, 220);
+            txtPerimetroCuadrado.Margin = new Padding(2, 1, 2, 1);
+            txtPerimetroCuadrado.Name = "txtPerimetroCuadrado";
+            txtPerimetroCuadrado.Size = new Size(110, 23);
+            txtPerimetroCuadrado.TabIndex = 7;
             // 
             // btnCalcular
             // 
-            btnCalcular.Location = new Point(74, 559);
+            btnCalcular.Location = new Point(40, 262);
+            btnCalcular.Margin = new Padding(2, 1, 2, 1);
             btnCalcular.Name = "btnCalcular";
-            btnCalcular.Size = new Size(254, 80);
+            btnCalcular.Size = new Size(137, 38);
             btnCalcular.TabIndex = 8;
             btnCalcular.Text = "CALCULAR";
             btnCalcular.UseVisualStyleBackColor = true;
             // 
             // btnNuevo
             // 
-            btnNuevo.Location = new Point(407, 559);
+            btnNuevo.Location = new Point(219, 262);
+            btnNuevo.Margin = new Padding(2, 1, 2, 1);
             btnNuevo.Name = "btnNuevo";
-            btnNuevo.Size = new Size(254, 80);
+            btnNuevo.Size = new Size(137, 38);
             btnNuevo.TabIndex = 9;
             btnNuevo.Text = "NUEVO";
             btnNuevo.UseVisualStyleBackColor = true;
             // 
             // btnRegresar
             // 
-            btnRegresar.Location = new Point(740, 559);
+            btnRegresar.Location = new Point(398, 262);
+            btnRegresar.Margin = new Padding(2, 1, 2, 1);
             btnRegresar.Name = "btnRegresar";
-            btnRegresar.Size = new Size(254, 80);
+            btnRegresar.Size = new Size(137, 38);
             btnRegresar.TabIndex = 10;
             btnRegresar.Text = "Regresar";
             btnRegresar.UseVisualStyleBackColor = true;
             // 
             // frmCuadrado
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1094, 709);
+            ClientSize = new Size(589, 332);
             Controls.Add(btnRegresar);
             Controls.Add(btnNuevo);
             Controls.Add(btnCalcular);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
+            Controls.Add(txtPerimetroCuadrado);
+            Controls.Add(txtAreaCuadrado);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(pictureBox1);
-            Controls.Add(textBox1);
+            Controls.Add(txtLadoCuadrado);
             Controls.Add(label2);
             Controls.Add(label1);
+            Margin = new Padding(2, 1, 2, 1);
             Name = "frmCuadrado";
             Text = "frmCuadrado";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -165,12 +177,12 @@
 
         private Label label1;
         private Label label2;
-        private TextBox textBox1;
+        private TextBox txtLadoCuadrado;
         private PictureBox pictureBox1;
         private Label label3;
         private Label label4;
-        private TextBox textBox2;
-        private TextBox textBox3;
+        private TextBox txtAreaCuadrado;
+        private TextBox txtPerimetroCuadrado;
         private Button btnCalcular;
         private Button btnNuevo;
         private Button btnRegresar;

@@ -31,14 +31,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTetaedro));
             label1 = new Label();
             label2 = new Label();
-            textBox1 = new TextBox();
+            txtLadoTetaedro = new TextBox();
             label3 = new Label();
             label4 = new Label();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
+            txtVolumenTetaedro = new TextBox();
+            txtAreaTetaedro = new TextBox();
+            btnCalcular = new Button();
+            btnNuevo = new Button();
+            btnRegresar = new Button();
             pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -47,7 +47,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(37, 33);
+            label1.Location = new Point(37, 21);
             label1.Name = "label1";
             label1.Size = new Size(118, 30);
             label1.TabIndex = 0;
@@ -63,13 +63,13 @@
             label2.TabIndex = 1;
             label2.Text = "Introduzca el lado";
             // 
-            // textBox1
+            // txtLadoTetaedro
             // 
-            textBox1.Location = new Point(118, 135);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(151, 23);
-            textBox1.TabIndex = 2;
-            textBox1.TextChanged += textBox1_TextChanged;
+            txtLadoTetaedro.Location = new Point(118, 135);
+            txtLadoTetaedro.Name = "txtLadoTetaedro";
+            txtLadoTetaedro.Size = new Size(151, 23);
+            txtLadoTetaedro.TabIndex = 2;
+            txtLadoTetaedro.TextChanged += textBox1_TextChanged;
             // 
             // label3
             // 
@@ -91,46 +91,46 @@
             label4.TabIndex = 4;
             label4.Text = "VOLUMEN";
             // 
-            // textBox2
+            // txtVolumenTetaedro
             // 
-            textBox2.Location = new Point(291, 269);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(107, 23);
-            textBox2.TabIndex = 5;
+            txtVolumenTetaedro.Location = new Point(291, 269);
+            txtVolumenTetaedro.Name = "txtVolumenTetaedro";
+            txtVolumenTetaedro.Size = new Size(107, 23);
+            txtVolumenTetaedro.TabIndex = 5;
             // 
-            // textBox3
+            // txtAreaTetaedro
             // 
-            textBox3.Location = new Point(25, 269);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(112, 23);
-            textBox3.TabIndex = 6;
+            txtAreaTetaedro.Location = new Point(25, 269);
+            txtAreaTetaedro.Name = "txtAreaTetaedro";
+            txtAreaTetaedro.Size = new Size(112, 23);
+            txtAreaTetaedro.TabIndex = 6;
             // 
-            // button1
+            // btnCalcular
             // 
-            button1.Location = new Point(25, 376);
-            button1.Name = "button1";
-            button1.Size = new Size(130, 42);
-            button1.TabIndex = 7;
-            button1.Text = "CALCULAR";
-            button1.UseVisualStyleBackColor = true;
+            btnCalcular.Location = new Point(25, 376);
+            btnCalcular.Name = "btnCalcular";
+            btnCalcular.Size = new Size(130, 42);
+            btnCalcular.TabIndex = 7;
+            btnCalcular.Text = "CALCULAR";
+            btnCalcular.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnNuevo
             // 
-            button2.Location = new Point(277, 376);
-            button2.Name = "button2";
-            button2.Size = new Size(130, 42);
-            button2.TabIndex = 8;
-            button2.Text = "NUEVO";
-            button2.UseVisualStyleBackColor = true;
+            btnNuevo.Location = new Point(277, 376);
+            btnNuevo.Name = "btnNuevo";
+            btnNuevo.Size = new Size(130, 42);
+            btnNuevo.TabIndex = 8;
+            btnNuevo.Text = "NUEVO";
+            btnNuevo.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnRegresar
             // 
-            button3.Location = new Point(552, 376);
-            button3.Name = "button3";
-            button3.Size = new Size(130, 42);
-            button3.TabIndex = 9;
-            button3.Text = "REGRESAR";
-            button3.UseVisualStyleBackColor = true;
+            btnRegresar.Location = new Point(552, 376);
+            btnRegresar.Name = "btnRegresar";
+            btnRegresar.Size = new Size(130, 42);
+            btnRegresar.TabIndex = 9;
+            btnRegresar.Text = "REGRESAR";
+            btnRegresar.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
@@ -148,14 +148,14 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(pictureBox1);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
+            Controls.Add(btnRegresar);
+            Controls.Add(btnNuevo);
+            Controls.Add(btnCalcular);
+            Controls.Add(txtAreaTetaedro);
+            Controls.Add(txtVolumenTetaedro);
             Controls.Add(label4);
             Controls.Add(label3);
-            Controls.Add(textBox1);
+            Controls.Add(txtLadoTetaedro);
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "FrmTetaedro";
@@ -169,14 +169,14 @@
 
         private Label label1;
         private Label label2;
-        private TextBox textBox1;
+        private TextBox txtLadoTetaedro;
         private Label label3;
         private Label label4;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private Button button1;
-        private Button button2;
-        private Button button3;
+        private TextBox txtVolumenTetaedro;
+        private TextBox txtAreaTetaedro;
+        private Button btnCalcular;
+        private Button btnNuevo;
+        private Button btnRegresar;
         private PictureBox pictureBox1;
     }
 }

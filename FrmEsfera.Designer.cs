@@ -32,14 +32,14 @@
             label1 = new Label();
             pictureBox1 = new PictureBox();
             label2 = new Label();
-            textBox1 = new TextBox();
+            txtRadioEsfera = new TextBox();
             label4 = new Label();
             label5 = new Label();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
+            txtVolumenEsfera = new TextBox();
+            txtAreaEsfera = new TextBox();
+            btnCalcular = new Button();
+            btnNuevo = new Button();
+            btnRegresar = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -72,12 +72,12 @@
             label2.TabIndex = 2;
             label2.Text = "Introduzca el Radio";
             // 
-            // textBox1
+            // txtRadioEsfera
             // 
-            textBox1.Location = new Point(167, 138);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(119, 23);
-            textBox1.TabIndex = 3;
+            txtRadioEsfera.Location = new Point(167, 138);
+            txtRadioEsfera.Name = "txtRadioEsfera";
+            txtRadioEsfera.Size = new Size(119, 23);
+            txtRadioEsfera.TabIndex = 3;
             // 
             // label4
             // 
@@ -100,61 +100,61 @@
             label5.Text = "VOLUMEN";
             label5.Click += label5_Click;
             // 
-            // textBox3
+            // txtVolumenEsfera
             // 
-            textBox3.Location = new Point(306, 264);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(133, 23);
-            textBox3.TabIndex = 8;
+            txtVolumenEsfera.Location = new Point(306, 264);
+            txtVolumenEsfera.Name = "txtVolumenEsfera";
+            txtVolumenEsfera.Size = new Size(133, 23);
+            txtVolumenEsfera.TabIndex = 8;
             // 
-            // textBox4
+            // txtAreaEsfera
             // 
-            textBox4.Location = new Point(12, 264);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(133, 23);
-            textBox4.TabIndex = 9;
+            txtAreaEsfera.Location = new Point(12, 264);
+            txtAreaEsfera.Name = "txtAreaEsfera";
+            txtAreaEsfera.Size = new Size(133, 23);
+            txtAreaEsfera.TabIndex = 9;
             // 
-            // button1
+            // btnCalcular
             // 
-            button1.Location = new Point(17, 382);
-            button1.Name = "button1";
-            button1.RightToLeft = RightToLeft.Yes;
-            button1.Size = new Size(114, 37);
-            button1.TabIndex = 10;
-            button1.Text = "CALCULAR";
-            button1.UseVisualStyleBackColor = true;
+            btnCalcular.Location = new Point(17, 382);
+            btnCalcular.Name = "btnCalcular";
+            btnCalcular.RightToLeft = RightToLeft.Yes;
+            btnCalcular.Size = new Size(114, 37);
+            btnCalcular.TabIndex = 10;
+            btnCalcular.Text = "CALCULAR";
+            btnCalcular.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnNuevo
             // 
-            button2.Location = new Point(313, 382);
-            button2.Name = "button2";
-            button2.Size = new Size(114, 37);
-            button2.TabIndex = 11;
-            button2.Text = "NUEVO";
-            button2.UseVisualStyleBackColor = true;
+            btnNuevo.Location = new Point(313, 382);
+            btnNuevo.Name = "btnNuevo";
+            btnNuevo.Size = new Size(114, 37);
+            btnNuevo.TabIndex = 11;
+            btnNuevo.Text = "NUEVO";
+            btnNuevo.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnRegresar
             // 
-            button3.Location = new Point(609, 382);
-            button3.Name = "button3";
-            button3.Size = new Size(114, 37);
-            button3.TabIndex = 12;
-            button3.Text = "REGRESAR";
-            button3.UseVisualStyleBackColor = true;
+            btnRegresar.Location = new Point(609, 382);
+            btnRegresar.Name = "btnRegresar";
+            btnRegresar.Size = new Size(114, 37);
+            btnRegresar.TabIndex = 12;
+            btnRegresar.Text = "REGRESAR";
+            btnRegresar.UseVisualStyleBackColor = true;
             // 
             // FrmEsfera
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
+            Controls.Add(btnRegresar);
+            Controls.Add(btnNuevo);
+            Controls.Add(btnCalcular);
+            Controls.Add(txtAreaEsfera);
+            Controls.Add(txtVolumenEsfera);
             Controls.Add(label5);
             Controls.Add(label4);
-            Controls.Add(textBox1);
+            Controls.Add(txtRadioEsfera);
             Controls.Add(label2);
             Controls.Add(pictureBox1);
             Controls.Add(label1);
@@ -170,13 +170,13 @@
         private Label label1;
         private PictureBox pictureBox1;
         private Label label2;
-        private TextBox textBox1;
+        private TextBox txtRadioEsfera;
         private Label label4;
         private Label label5;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private Button button1;
-        private Button button2;
-        private Button button3;
+        private TextBox txtVolumenEsfera;
+        private TextBox txtAreaEsfera;
+        private Button btnCalcular;
+        private Button btnNuevo;
+        private Button btnRegresar;
     }
 }
