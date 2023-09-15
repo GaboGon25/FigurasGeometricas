@@ -140,6 +140,7 @@
             btnCalcular.TabIndex = 10;
             btnCalcular.Text = "CALCULAR";
             btnCalcular.UseVisualStyleBackColor = true;
+            btnCalcular.Click += btnCalcular_Click;
             // 
             // btnNuevo
             // 

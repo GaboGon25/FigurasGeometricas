@@ -128,6 +128,7 @@
             btnCalcular.TabIndex = 8;
             btnCalcular.Text = "CALCULAR";
             btnCalcular.UseVisualStyleBackColor = true;
+            btnCalcular.Click += btnCalcular_Click;
             // 
             // btnNuevo
             // 
@@ -146,7 +147,7 @@
             btnRegresar.Name = "btnRegresar";
             btnRegresar.Size = new Size(123, 32);
             btnRegresar.TabIndex = 10;
-            btnRegresar.Text = "Regresar";
+            btnRegresar.Text = "REGRESAR";
             btnRegresar.UseVisualStyleBackColor = true;
             // 
             // frmCirculo

@@ -16,5 +16,16 @@ namespace FigurasGeometricas
         {
             InitializeComponent();
         }
+
+        private void btnCalcular_Click(object sender, EventArgs e)
+        {
+            double LadoTriangulo = Convert.ToDouble(txtLadoTriangulo.Text);
+            double AlturaTriangulo = Convert.ToDouble(txtAlturaTriangulo.Text); 
+            Triangulo triangulo = new Triangulo(LadoTriangulo, AlturaTriangulo);
+            double resultadoArea = triangulo.CalcularArea();
+            double resultaoPerimetro = triangulo.CalcularPerimetro();
+            txtAreaTriangulo.Text = resultadoArea.ToString("0.00");
+            txtPerimetroTriangulo.Text = resultaoPerimetro.ToString("0.00");
+        }
     }
 }
