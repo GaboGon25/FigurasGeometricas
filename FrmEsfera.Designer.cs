@@ -56,7 +56,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(516, 15);
+            pictureBox1.Location = new Point(242, 9);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(229, 230);
             pictureBox1.TabIndex = 1;
@@ -66,7 +66,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(158, 93);
+            label2.Location = new Point(31, 93);
             label2.Name = "label2";
             label2.Size = new Size(138, 20);
             label2.TabIndex = 2;
@@ -74,7 +74,7 @@
             // 
             // txtRadioEsfera
             // 
-            txtRadioEsfera.Location = new Point(167, 138);
+            txtRadioEsfera.Location = new Point(31, 135);
             txtRadioEsfera.Name = "txtRadioEsfera";
             txtRadioEsfera.Size = new Size(119, 23);
             txtRadioEsfera.TabIndex = 3;
@@ -83,7 +83,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(12, 220);
+            label4.Location = new Point(12, 259);
             label4.Name = "label4";
             label4.Size = new Size(57, 25);
             label4.TabIndex = 6;
@@ -93,7 +93,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(306, 220);
+            label5.Location = new Point(242, 259);
             label5.Name = "label5";
             label5.Size = new Size(101, 25);
             label5.TabIndex = 7;
@@ -102,14 +102,14 @@
             // 
             // txtVolumenEsfera
             // 
-            txtVolumenEsfera.Location = new Point(306, 264);
+            txtVolumenEsfera.Location = new Point(242, 298);
             txtVolumenEsfera.Name = "txtVolumenEsfera";
             txtVolumenEsfera.Size = new Size(133, 23);
             txtVolumenEsfera.TabIndex = 8;
             // 
             // txtAreaEsfera
             // 
-            txtAreaEsfera.Location = new Point(12, 264);
+            txtAreaEsfera.Location = new Point(12, 298);
             txtAreaEsfera.Name = "txtAreaEsfera";
             txtAreaEsfera.Size = new Size(133, 23);
             txtAreaEsfera.TabIndex = 9;
@@ -123,10 +123,11 @@
             btnCalcular.TabIndex = 10;
             btnCalcular.Text = "CALCULAR";
             btnCalcular.UseVisualStyleBackColor = true;
+            btnCalcular.Click += btnCalcular_Click;
             // 
             // btnNuevo
             // 
-            btnNuevo.Location = new Point(313, 382);
+            btnNuevo.Location = new Point(184, 382);
             btnNuevo.Name = "btnNuevo";
             btnNuevo.Size = new Size(114, 37);
             btnNuevo.TabIndex = 11;
@@ -135,7 +136,7 @@
             // 
             // btnRegresar
             // 
-            btnRegresar.Location = new Point(609, 382);
+            btnRegresar.Location = new Point(365, 382);
             btnRegresar.Name = "btnRegresar";
             btnRegresar.Size = new Size(114, 37);
             btnRegresar.TabIndex = 12;
@@ -146,7 +147,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(516, 450);
             Controls.Add(btnRegresar);
             Controls.Add(btnNuevo);
             Controls.Add(btnCalcular);

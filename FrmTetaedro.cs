@@ -21,5 +21,15 @@ namespace FigurasGeometricas
         {
 
         }
+
+        private void btnCalcular_Click(object sender, EventArgs e)
+        {
+            double ladoTetraedro = Convert.ToDouble(txtLadoTetraedro.Text);
+            Tetraedro tetraedro = new Tetraedro(ladoTetraedro);
+            double resultadoArea = tetraedro.CalcularArea();
+            double resultadoVolumen = tetraedro.CalcularVolumen();
+            txtAreaTetraedro.Text = resultadoArea.ToString("0.00");
+            txtVolumenTetraedro.Text = resultadoVolumen.ToString("0.00");
+        }
     }
 }

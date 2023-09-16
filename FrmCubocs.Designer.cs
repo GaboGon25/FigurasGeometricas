@@ -56,7 +56,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(533, 41);
+            pictureBox1.Location = new Point(354, 51);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(241, 233);
             pictureBox1.TabIndex = 1;
@@ -66,7 +66,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(157, 92);
+            label2.Location = new Point(46, 98);
             label2.Name = "label2";
             label2.Size = new Size(129, 20);
             label2.TabIndex = 2;
@@ -74,7 +74,7 @@
             // 
             // txtLadoCubo
             // 
-            txtLadoCubo.Location = new Point(135, 135);
+            txtLadoCubo.Location = new Point(16, 121);
             txtLadoCubo.Name = "txtLadoCubo";
             txtLadoCubo.Size = new Size(189, 23);
             txtLadoCubo.TabIndex = 3;
@@ -100,7 +100,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(371, 215);
+            label4.Location = new Point(199, 225);
             label4.Name = "label4";
             label4.Size = new Size(78, 20);
             label4.TabIndex = 6;
@@ -108,7 +108,7 @@
             // 
             // txtVolumenCubo
             // 
-            txtVolumenCubo.Location = new Point(371, 262);
+            txtVolumenCubo.Location = new Point(199, 261);
             txtVolumenCubo.Name = "txtVolumenCubo";
             txtVolumenCubo.Size = new Size(115, 23);
             txtVolumenCubo.TabIndex = 7;
@@ -121,10 +121,11 @@
             btnCalcular.TabIndex = 8;
             btnCalcular.Text = "CALCULAR";
             btnCalcular.UseVisualStyleBackColor = true;
+            btnCalcular.Click += btnCalcular_Click;
             // 
             // btnNuevo
             // 
-            btnNuevo.Location = new Point(295, 383);
+            btnNuevo.Location = new Point(199, 383);
             btnNuevo.Name = "btnNuevo";
             btnNuevo.Size = new Size(115, 37);
             btnNuevo.TabIndex = 9;
@@ -133,7 +134,7 @@
             // 
             // btnRegresar
             // 
-            btnRegresar.Location = new Point(607, 383);
+            btnRegresar.Location = new Point(400, 383);
             btnRegresar.Name = "btnRegresar";
             btnRegresar.Size = new Size(115, 37);
             btnRegresar.TabIndex = 10;
@@ -144,7 +145,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(618, 450);
             Controls.Add(btnRegresar);
             Controls.Add(btnNuevo);
             Controls.Add(btnCalcular);
