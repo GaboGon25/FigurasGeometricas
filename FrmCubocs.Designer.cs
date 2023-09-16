@@ -78,6 +78,7 @@
             txtLadoCubo.Name = "txtLadoCubo";
             txtLadoCubo.Size = new Size(189, 23);
             txtLadoCubo.TabIndex = 3;
+            txtLadoCubo.TextChanged += txtLadoCubo_TextChanged;
             // 
             // label3
             // 
@@ -131,6 +132,7 @@
             btnNuevo.TabIndex = 9;
             btnNuevo.Text = "NUEVO";
             btnNuevo.UseVisualStyleBackColor = true;
+            btnNuevo.Click += btnNuevo_Click;
             // 
             // btnRegresar
             // 
@@ -140,6 +142,7 @@
             btnRegresar.TabIndex = 10;
             btnRegresar.Text = "REGRESAR";
             btnRegresar.UseVisualStyleBackColor = true;
+            btnRegresar.Click += btnRegresar_Click;
             // 
             // FrmCubocs
             // 

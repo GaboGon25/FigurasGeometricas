@@ -123,6 +123,7 @@
             btnNuevo.TabIndex = 8;
             btnNuevo.Text = "NUEVO";
             btnNuevo.UseVisualStyleBackColor = true;
+            btnNuevo.Click += btnNuevo_Click;
             // 
             // btnRegresar
             // 
@@ -132,6 +133,7 @@
             btnRegresar.TabIndex = 9;
             btnRegresar.Text = "REGRESAR";
             btnRegresar.UseVisualStyleBackColor = true;
+            btnRegresar.Click += btnRegresar_Click;
             // 
             // pictureBox1
             // 

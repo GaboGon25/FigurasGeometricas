@@ -61,6 +61,7 @@
             txtRadioCirculo.Name = "txtRadioCirculo";
             txtRadioCirculo.Size = new Size(297, 23);
             txtRadioCirculo.TabIndex = 1;
+            txtRadioCirculo.TextChanged += txtRadioCirculo_TextChanged;
             // 
             // label2
             // 

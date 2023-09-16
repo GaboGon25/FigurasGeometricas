@@ -71,6 +71,7 @@
             txtLadoCuadrado.Name = "txtLadoCuadrado";
             txtLadoCuadrado.Size = new Size(258, 23);
             txtLadoCuadrado.TabIndex = 2;
+            txtLadoCuadrado.TextChanged += txtLadoCuadrado_TextChanged;
             // 
             // pictureBox1
             // 

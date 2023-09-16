@@ -78,6 +78,7 @@
             txtRadioEsfera.Name = "txtRadioEsfera";
             txtRadioEsfera.Size = new Size(119, 23);
             txtRadioEsfera.TabIndex = 3;
+            txtRadioEsfera.TextChanged += txtRadioEsfera_TextChanged;
             // 
             // label4
             // 
@@ -132,6 +133,7 @@
             btnNuevo.TabIndex = 11;
             btnNuevo.Text = "NUEVO";
             btnNuevo.UseVisualStyleBackColor = true;
+            btnNuevo.Click += btnNuevo_Click;
             // 
             // btnRegresar
             // 
@@ -141,6 +143,7 @@
             btnRegresar.TabIndex = 12;
             btnRegresar.Text = "REGRESAR";
             btnRegresar.UseVisualStyleBackColor = true;
+            btnRegresar.Click += btnRegresar_Click;
             // 
             // FrmEsfera
             // 

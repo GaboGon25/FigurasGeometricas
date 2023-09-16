@@ -39,5 +39,10 @@
             frmFigurasBidimensionales frmbidimensionales = new frmFigurasBidimensionales();
             frmbidimensionales.Show();
         }
+
+        private void txtLadoCuadrado_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

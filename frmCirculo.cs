@@ -50,5 +50,10 @@ namespace FigurasGeometricas
             frmFigurasBidimensionales frmbidimensionales = new frmFigurasBidimensionales();
             frmbidimensionales.Show();
         }
+
+        private void txtRadioCirculo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
