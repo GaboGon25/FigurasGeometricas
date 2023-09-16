@@ -19,12 +19,36 @@ namespace FigurasGeometricas
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-            double radioCirculo = Convert.ToDouble(txtRadioCirculo.Text);
-            Circulo circulo = new Circulo(radioCirculo);
-            double resultadoArea = circulo.CalcularArea();
-            double resultadoPerimetro = circulo.CalcularPerimetro();
-            txtAreaCirculo.Text = resultadoArea.ToString("0.00");
-            txtPerimetroCirculo.Text = resultadoPerimetro.ToString("0.00");
+            string input = txtRadioCirculo.Text;
+
+            if (double.TryParse(input, out double radioCirculo))
+            {
+                Circulo circulo = new Circulo(radioCirculo);
+                double resultadoArea = circulo.CalcularArea();
+                double resultadoPerimetro = circulo.CalcularPerimetro();
+                txtAreaCirculo.Text = resultadoArea.ToString("0.00");
+                txtPerimetroCirculo.Text = resultadoPerimetro.ToString("0.00");
+            }
+            else
+            {
+                MessageBox.Show("La entrada no es un valor numerico.");
+            }
+        }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            txtRadioCirculo.Clear();
+            txtAreaCirculo.Clear();
+            txtPerimetroCirculo.Clear();
+            txtRadioCirculo.Focus();
+        }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+            frmFigurasBidimensionales frmbidimensionales = new frmFigurasBidimensionales();
+            frmbidimensionales.Show();
         }
     }
 }

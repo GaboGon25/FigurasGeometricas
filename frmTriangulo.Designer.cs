@@ -150,6 +150,7 @@
             btnNuevo.TabIndex = 11;
             btnNuevo.Text = "NUEVO";
             btnNuevo.UseVisualStyleBackColor = true;
+            btnNuevo.Click += btnNuevo_Click;
             // 
             // btnRegresar
             // 
@@ -159,6 +160,7 @@
             btnRegresar.TabIndex = 12;
             btnRegresar.Text = "REGRESAR";
             btnRegresar.UseVisualStyleBackColor = true;
+            btnRegresar.Click += btnRegresar_Click;
             // 
             // frmTriangulo
             // 

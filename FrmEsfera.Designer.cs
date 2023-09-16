@@ -98,7 +98,6 @@
             label5.Size = new Size(101, 25);
             label5.TabIndex = 7;
             label5.Text = "VOLUMEN";
-            label5.Click += label5_Click;
             // 
             // txtVolumenEsfera
             // 

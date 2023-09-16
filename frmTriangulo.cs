@@ -19,13 +19,40 @@ namespace FigurasGeometricas
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-            double LadoTriangulo = Convert.ToDouble(txtLadoTriangulo.Text);
-            double AlturaTriangulo = Convert.ToDouble(txtAlturaTriangulo.Text); 
-            Triangulo triangulo = new Triangulo(LadoTriangulo, AlturaTriangulo);
-            double resultadoArea = triangulo.CalcularArea();
-            double resultaoPerimetro = triangulo.CalcularPerimetro();
-            txtAreaTriangulo.Text = resultadoArea.ToString("0.00");
-            txtPerimetroTriangulo.Text = resultaoPerimetro.ToString("0.00");
+
+            string inputLadoTriangulo = txtLadoTriangulo.Text;
+            string inputAlturaTriangulo = txtAlturaTriangulo.Text;
+
+            if (double.TryParse(inputLadoTriangulo, out double LadoTriangulo) && double.TryParse(inputAlturaTriangulo, out double AlturaTriangulo))
+            {
+                Triangulo triangulo = new Triangulo(LadoTriangulo, AlturaTriangulo);
+                double resultadoArea = triangulo.CalcularArea();
+                double resultaoPerimetro = triangulo.CalcularPerimetro();
+                txtAreaTriangulo.Text = resultadoArea.ToString("0.00");
+                txtPerimetroTriangulo.Text = resultaoPerimetro.ToString("0.00");
+            }
+            else
+            {
+                MessageBox.Show("La entrada no es un valor numerico.");
+            }
+
+        }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            txtLadoTriangulo.Clear();
+            txtAlturaTriangulo.Clear();
+            txtAreaTriangulo.Clear();
+            txtPerimetroTriangulo.Clear();
+            txtLadoTriangulo.Focus();
+        }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+            frmFigurasBidimensionales frmbidimensionales = new frmFigurasBidimensionales();
+            frmbidimensionales.Show();
         }
     }
 }

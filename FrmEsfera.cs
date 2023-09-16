@@ -17,11 +17,6 @@ namespace FigurasGeometricas
             InitializeComponent();
         }
 
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnCalcular_Click(object sender, EventArgs e)
         {
             double radio = Convert.ToDouble(txtRadioEsfera.Text);

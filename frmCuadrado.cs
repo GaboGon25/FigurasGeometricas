@@ -9,12 +9,35 @@
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-            double Lado = Convert.ToDouble(txtLadoCuadrado.Text);
-            Cuadrado cuadrado = new Cuadrado(Lado);
-            double resultadoArea = cuadrado.CalcularArea();
-            double resultadoPerimetro = cuadrado.CalcularPerimetro();  
-            txtAreaCuadrado.Text = resultadoArea.ToString("0.00");
-            txtPerimetroCuadrado.Text = resultadoPerimetro.ToString("0.00");
+            string input = txtLadoCuadrado.Text;
+            if (double.TryParse(input, out double Lado))
+            {
+                Cuadrado cuadrado = new Cuadrado(Lado);
+                double resultadoArea = cuadrado.CalcularArea();
+                double resultadoPerimetro = cuadrado.CalcularPerimetro();
+                txtAreaCuadrado.Text = resultadoArea.ToString("0.00");
+                txtPerimetroCuadrado.Text = resultadoPerimetro.ToString("0.00");
+            }
+            else
+            {
+                MessageBox.Show("La entrada no es un valor numerico.");
+            }
+        }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            txtLadoCuadrado.Clear();
+            txtAreaCuadrado.Clear();
+            txtPerimetroCuadrado.Clear();
+            txtLadoCuadrado.Focus();
+        }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+            frmFigurasBidimensionales frmbidimensionales = new frmFigurasBidimensionales();
+            frmbidimensionales.Show();
         }
     }
 }
