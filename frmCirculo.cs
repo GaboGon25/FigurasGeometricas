@@ -41,19 +41,6 @@ namespace FigurasGeometricas
             txtAreaCirculo.Clear();
             txtPerimetroCirculo.Clear();
             txtRadioCirculo.Focus();
-        }
-
-        private void btnRegresar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-
-            frmFigurasBidimensionales frmbidimensionales = new frmFigurasBidimensionales();
-            frmbidimensionales.Show();
-        }
-
-        private void txtRadioCirculo_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        }     
     }
 }

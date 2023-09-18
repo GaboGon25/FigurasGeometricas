@@ -46,13 +46,5 @@ namespace FigurasGeometricas
             txtPerimetroTriangulo.Clear();
             txtLadoTriangulo.Focus();
         }
-
-        private void btnRegresar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-
-            frmFigurasBidimensionales frmbidimensionales = new frmFigurasBidimensionales();
-            frmbidimensionales.Show();
-        }
     }
 }

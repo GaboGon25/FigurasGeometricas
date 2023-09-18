@@ -39,7 +39,6 @@
             txtVolumenCubo = new TextBox();
             btnCalcular = new Button();
             btnNuevo = new Button();
-            btnRegresar = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -78,7 +77,6 @@
             txtLadoCubo.Name = "txtLadoCubo";
             txtLadoCubo.Size = new Size(189, 23);
             txtLadoCubo.TabIndex = 3;
-            txtLadoCubo.TextChanged += txtLadoCubo_TextChanged;
             // 
             // label3
             // 
@@ -134,22 +132,11 @@
             btnNuevo.UseVisualStyleBackColor = true;
             btnNuevo.Click += btnNuevo_Click;
             // 
-            // btnRegresar
-            // 
-            btnRegresar.Location = new Point(400, 383);
-            btnRegresar.Name = "btnRegresar";
-            btnRegresar.Size = new Size(115, 37);
-            btnRegresar.TabIndex = 10;
-            btnRegresar.Text = "REGRESAR";
-            btnRegresar.UseVisualStyleBackColor = true;
-            btnRegresar.Click += btnRegresar_Click;
-            // 
             // FrmCubocs
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(618, 450);
-            Controls.Add(btnRegresar);
             Controls.Add(btnNuevo);
             Controls.Add(btnCalcular);
             Controls.Add(txtVolumenCubo);
@@ -179,6 +166,5 @@
         private TextBox txtVolumenCubo;
         private Button btnCalcular;
         private Button btnNuevo;
-        private Button btnRegresar;
     }
 }

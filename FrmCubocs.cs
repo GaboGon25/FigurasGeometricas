@@ -35,25 +35,12 @@ namespace FigurasGeometricas
             }
 
         }
-
-        private void txtLadoCubo_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             txtLadoCubo.Clear();
             txtAreaCubo.Clear();
             txtVolumenCubo.Clear();
             txtLadoCubo.Focus();
-        }
-
-        private void btnRegresar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            frmFigurasTridimensionales frmtridimensionales = new frmFigurasTridimensionales();
-            frmtridimensionales.Show();
         }
     }
 }

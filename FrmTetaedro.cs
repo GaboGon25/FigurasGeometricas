@@ -47,12 +47,5 @@ namespace FigurasGeometricas
             txtVolumenTetraedro.Clear();
             txtLadoTetraedro.Focus();
         }
-
-        private void btnRegresar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            frmFigurasTridimensionales frmtridimensionales = new frmFigurasTridimensionales();
-            frmtridimensionales.Show();
-        }
     }
 }

@@ -38,7 +38,6 @@
             txtAreaTetraedro = new TextBox();
             btnCalcular = new Button();
             btnNuevo = new Button();
-            btnRegresar = new Button();
             pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -125,16 +124,6 @@
             btnNuevo.UseVisualStyleBackColor = true;
             btnNuevo.Click += btnNuevo_Click;
             // 
-            // btnRegresar
-            // 
-            btnRegresar.Location = new Point(434, 376);
-            btnRegresar.Name = "btnRegresar";
-            btnRegresar.Size = new Size(130, 42);
-            btnRegresar.TabIndex = 9;
-            btnRegresar.Text = "REGRESAR";
-            btnRegresar.UseVisualStyleBackColor = true;
-            btnRegresar.Click += btnRegresar_Click;
-            // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
@@ -151,7 +140,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(584, 450);
             Controls.Add(pictureBox1);
-            Controls.Add(btnRegresar);
             Controls.Add(btnNuevo);
             Controls.Add(btnCalcular);
             Controls.Add(txtAreaTetraedro);
@@ -179,7 +167,6 @@
         private TextBox txtAreaTetraedro;
         private Button btnCalcular;
         private Button btnNuevo;
-        private Button btnRegresar;
         private PictureBox pictureBox1;
     }
 }

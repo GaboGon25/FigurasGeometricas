@@ -35,25 +35,12 @@ namespace FigurasGeometricas
             }
 
         }
-
-        private void txtRadioEsfera_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             txtRadioEsfera.Clear();
             txtAreaEsfera.Clear();
             txtVolumenEsfera.Clear();
             txtRadioEsfera.Focus();
-        }
-
-        private void btnRegresar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            frmFigurasTridimensionales frmtridimensionales = new frmFigurasTridimensionales();
-            frmtridimensionales.Show();
         }
     }
 }

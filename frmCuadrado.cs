@@ -31,18 +31,5 @@
             txtPerimetroCuadrado.Clear();
             txtLadoCuadrado.Focus();
         }
-
-        private void btnRegresar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-
-            frmFigurasBidimensionales frmbidimensionales = new frmFigurasBidimensionales();
-            frmbidimensionales.Show();
-        }
-
-        private void txtLadoCuadrado_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

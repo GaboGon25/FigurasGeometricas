@@ -39,7 +39,6 @@
             txtPerimetroCuadrado = new TextBox();
             btnCalcular = new Button();
             btnNuevo = new Button();
-            btnRegresar = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -71,7 +70,6 @@
             txtLadoCuadrado.Name = "txtLadoCuadrado";
             txtLadoCuadrado.Size = new Size(258, 23);
             txtLadoCuadrado.TabIndex = 2;
-            txtLadoCuadrado.TextChanged += txtLadoCuadrado_TextChanged;
             // 
             // pictureBox1
             // 
@@ -142,23 +140,11 @@
             btnNuevo.UseVisualStyleBackColor = true;
             btnNuevo.Click += btnNuevo_Click;
             // 
-            // btnRegresar
-            // 
-            btnRegresar.Location = new Point(398, 262);
-            btnRegresar.Margin = new Padding(2, 1, 2, 1);
-            btnRegresar.Name = "btnRegresar";
-            btnRegresar.Size = new Size(137, 38);
-            btnRegresar.TabIndex = 10;
-            btnRegresar.Text = "Regresar";
-            btnRegresar.UseVisualStyleBackColor = true;
-            btnRegresar.Click += btnRegresar_Click;
-            // 
             // frmCuadrado
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(589, 332);
-            Controls.Add(btnRegresar);
             Controls.Add(btnNuevo);
             Controls.Add(btnCalcular);
             Controls.Add(txtPerimetroCuadrado);
@@ -189,6 +175,5 @@
         private TextBox txtPerimetroCuadrado;
         private Button btnCalcular;
         private Button btnNuevo;
-        private Button btnRegresar;
     }
 }

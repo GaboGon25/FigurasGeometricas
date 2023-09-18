@@ -39,7 +39,6 @@
             txtPerimetroCirculo = new TextBox();
             btnCalcular = new Button();
             btnNuevo = new Button();
-            btnRegresar = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -61,7 +60,6 @@
             txtRadioCirculo.Name = "txtRadioCirculo";
             txtRadioCirculo.Size = new Size(297, 23);
             txtRadioCirculo.TabIndex = 1;
-            txtRadioCirculo.TextChanged += txtRadioCirculo_TextChanged;
             // 
             // label2
             // 
@@ -142,23 +140,11 @@
             btnNuevo.UseVisualStyleBackColor = true;
             btnNuevo.Click += btnNuevo_Click;
             // 
-            // btnRegresar
-            // 
-            btnRegresar.Location = new Point(442, 298);
-            btnRegresar.Margin = new Padding(2, 1, 2, 1);
-            btnRegresar.Name = "btnRegresar";
-            btnRegresar.Size = new Size(123, 32);
-            btnRegresar.TabIndex = 10;
-            btnRegresar.Text = "REGRESAR";
-            btnRegresar.UseVisualStyleBackColor = true;
-            btnRegresar.Click += btnRegresar_Click;
-            // 
             // frmCirculo
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(600, 400);
-            Controls.Add(btnRegresar);
             Controls.Add(btnNuevo);
             Controls.Add(btnCalcular);
             Controls.Add(txtPerimetroCirculo);
@@ -189,6 +175,5 @@
         private TextBox txtPerimetroCirculo;
         private Button btnCalcular;
         private Button btnNuevo;
-        private Button btnRegresar;
     }
 }

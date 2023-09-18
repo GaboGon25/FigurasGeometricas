@@ -39,7 +39,6 @@
             txtAreaEsfera = new TextBox();
             btnCalcular = new Button();
             btnNuevo = new Button();
-            btnRegresar = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -78,7 +77,6 @@
             txtRadioEsfera.Name = "txtRadioEsfera";
             txtRadioEsfera.Size = new Size(119, 23);
             txtRadioEsfera.TabIndex = 3;
-            txtRadioEsfera.TextChanged += txtRadioEsfera_TextChanged;
             // 
             // label4
             // 
@@ -135,22 +133,11 @@
             btnNuevo.UseVisualStyleBackColor = true;
             btnNuevo.Click += btnNuevo_Click;
             // 
-            // btnRegresar
-            // 
-            btnRegresar.Location = new Point(365, 382);
-            btnRegresar.Name = "btnRegresar";
-            btnRegresar.Size = new Size(114, 37);
-            btnRegresar.TabIndex = 12;
-            btnRegresar.Text = "REGRESAR";
-            btnRegresar.UseVisualStyleBackColor = true;
-            btnRegresar.Click += btnRegresar_Click;
-            // 
             // FrmEsfera
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(516, 450);
-            Controls.Add(btnRegresar);
             Controls.Add(btnNuevo);
             Controls.Add(btnCalcular);
             Controls.Add(txtAreaEsfera);
@@ -180,6 +167,5 @@
         private TextBox txtAreaEsfera;
         private Button btnCalcular;
         private Button btnNuevo;
-        private Button btnRegresar;
     }
 }

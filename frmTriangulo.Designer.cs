@@ -40,7 +40,6 @@
             label5 = new Label();
             btnCalcular = new Button();
             btnNuevo = new Button();
-            btnRegresar = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -152,22 +151,11 @@
             btnNuevo.UseVisualStyleBackColor = true;
             btnNuevo.Click += btnNuevo_Click;
             // 
-            // btnRegresar
-            // 
-            btnRegresar.Location = new Point(368, 319);
-            btnRegresar.Name = "btnRegresar";
-            btnRegresar.Size = new Size(97, 31);
-            btnRegresar.TabIndex = 12;
-            btnRegresar.Text = "REGRESAR";
-            btnRegresar.UseVisualStyleBackColor = true;
-            btnRegresar.Click += btnRegresar_Click;
-            // 
             // frmTriangulo
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(723, 390);
-            Controls.Add(btnRegresar);
             Controls.Add(btnNuevo);
             Controls.Add(btnCalcular);
             Controls.Add(label5);
@@ -201,6 +189,5 @@
         private Label label5;
         private Button btnCalcular;
         private Button btnNuevo;
-        private Button btnRegresar;
     }
 }
